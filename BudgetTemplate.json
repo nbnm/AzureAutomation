@@ -1,0 +1,33 @@
+{  "properties": {
+    "timePeriod":{"startDate":"2021-05-01T00:00:00Z","endDate":"2025-05-31T00:00:00Z"},
+    "timeGrain":"BillingMonth",
+    "amount" : 500.0,
+    "currentSpend":{"amount":0.0,"unit":"USD"},
+    "category":"Cost",
+"notifications": 
+    {
+    "Actual_GreaterThan_80_Percent": {
+      "enabled": true,
+      "operator": "GreaterThan",
+      "threshold": 80.0,
+      "locale": "en-us",
+      "contactEmails": [
+        "oleg@t1a.com",
+        "am@t1a.com"
+      ],
+      "thresholdType": "Actual"
+    },
+    "Forecast_GreaterThan_100_Percent": {
+        "enabled": true,
+        "operator": "GreaterThan",
+        "threshold": 100.0,
+        "locale": "en-us",
+        "contactEmails": [
+          "example@t1a.com"
+        ],
+        "thresholdType": "Forecasted"
+      }
+},
+"filter": {}
+}
+}
